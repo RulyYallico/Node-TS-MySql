@@ -1,0 +1,55 @@
+npm init -y
+
+npm i express morgan cors mysql2 jsonwebtoken dotenv bcryptjs
+npm i typescript nodemon ts-node -D
+
+npm i @types/express @types/morgan @types/cors types/mysql2 @types/dotenv -D
+
+-- install tsconfig.json
+npx tsc --init
+
+-- convirte typescript en js
+npx tsc
+
+-- ejecuta el proyecto en el servidor
+node build/index.js
+
+
+-- extender Express
+declare global{
+    namespace Express {
+        interface Request {
+            currentUser: UserModel
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+me quede en el minuto 36 
+https://www.youtube.com/watch?v=4clEduk6OQM
+
+
+
+
+node tsc API jwt
+https://www.youtube.com/watch?v=qVUr4YC6ZXA
+
+
+-- 
+
+
+https://www.youtube.com/watch?v=VbW6vWTaHOY
+https://www.youtube.com/watch?v=XPGFqx8Vg-Y
+
+
+
+
+---- Node.js Rest APIs example with Express, Sequelize & MySQL
+https://bezkoder.com/node-js-express-sequelize-mysql/
